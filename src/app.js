@@ -24,7 +24,7 @@ router.get('/lastfm/api/getUserInfo', [
   middleware.getUserInfo, 
   (req, res, next) => {
     // Do some api stuff
-    res.status(200).send('Did some api stuff');
+    res.status(200).send(res.locals.user_info);
   },
 ]);
 
