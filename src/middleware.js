@@ -1,5 +1,7 @@
 module.exports = (deps, opts={}) => {
-  const fetch = deps.fetch
+  const {
+    fetch,
+  } = deps
 
   const getUserInfo = (req, res, next) => {
     // Stubbed for now

@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/NathanYocum/express-testing-example#readme",
   "devDependencies": {
-    "jest": "^23.2.0"
+    "jest": "^23.2.0",
+    "supertest": "^3.1.0"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",

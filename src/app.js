@@ -20,7 +20,7 @@ router.get('/', (req, res, next) => {
   res.status(200).send('Example Home Page');
 });
 
-router.get('/lastfm/api/', [
+router.get('/lastfm/api/getUserInfo', [
   middleware.getUserInfo, 
   (req, res, next) => {
     // Do some api stuff
@@ -34,4 +34,5 @@ router.get('*', (req, res, next) => {
 
 app.get('*', router);
 
+module.exports.router = router;
 module.exports.app = app;
